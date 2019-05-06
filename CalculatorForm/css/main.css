@@ -122,9 +122,19 @@
     padding: 20px 50px;
   }
 
+  #naslov{
+      color: green;
+  }
   
 
   
+
+  .card-text{
+      float:right;
+  }
+#telefon{
+    color: green;
+}
   
   
 
