@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HouseKeep</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="shortcut icon" href="#"/>
+
+    <!-- JQuery -->
+    <script src="js/jquery v3.3.1.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- DataTables -->
+    <link rel="stylesheet" href="css/datatables.min.css" type="text/css">
+    <script src="js/datatables.min.js"></script>
+
+    <!-- Awesome Font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <!-- amCharts -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+                <h1 style="text-emphasis-color: blue">Keephouse</h1>
+              </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="container">
+         <div class="row">
+             <div class="col-8">
+                 <h3>Postcode</h3>
+                 <br>
+                   <div class="form-group">                
+                    <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" required>
+                   </div>
+                   <br>
+                   <h3>Bedrooms</h3>
+                   <br>
+                   <div class="form-group">
+                    <div class="radio-toolbar">
+                      <input type="radio" id="radioApple" name="radioFruit" value="0" checked>
+                      <label for="radioApple">0</label>
+                  
+                      <input type="radio" id="radioBanana" name="radioFruit" value="10">
+                      <label for="radioBanana">1</label>
+                  
+                      <input type="radio" id="radioOrange" name="radioFruit" value="20">
+                      <label for="radioOrange">2</label> 
+
+                      <input type="radio" id="radioBanana" name="radioFruit" value="30">
+                      <label for="radioBanana">3</label>
+
+
+                        <br><br>
+
+                        <input type="radio" id="radioBanana" name="radioFruit" value="40">
+                        <label for="radioBanana">4</label>
+
+                      <input type="radio" id="radioBanana" name="radioFruit" value="50">
+                      <label for="radioBanana">5</label>
+
+                      <input type="radio" id="radioBanana" name="radioFruit" value="60">
+                      <label for="radioBanana">6</label>
+
+                      <input type="radio" id="radioBanana" name="radioFruit" value="70">
+                      <label for="radioBanana">7</label>
+                  </div>
+                </div>
+                <br>
+                <h3>Bathrooms</h3>
+                <br>
+                <div class="form-group">
+                    <div class="radio-toolbar">
+                      <input type="radio" id="radioApple" name="radioFruit" value="0" checked>
+                      <label for="radioApple">0</label>
+                  
+                      <input type="radio" id="radioBanana" name="radioFruit" value="10">
+                      <label for="radioBanana">1</label>
+                  
+                      <input type="radio" id="radioOrange" name="radioFruit" value="20">
+                      <label for="radioOrange">2</label> 
+
+                      <input type="radio" id="radioBanana" name="radioFruit" value="30">
+                      <label for="radioBanana">3</label>
+
+                     
+
+                        <br><br>
+                        <input type="radio" id="radioBanana" name="radioFruit" value="40">
+                        <label for="radioBanana">4</label>
+                       
+
+                      <input type="radio" id="radioBanana" name="radioFruit" value="50">
+                      <label for="radioBanana">5</label>
+
+                      <input type="radio" id="radioBanana" name="radioFruit" value="60">
+                      <label for="radioBanana">6</label>
+
+                      <input type="radio" id="radioBanana" name="radioFruit" value="70">
+                      <label for="radioBanana">7</label>
+                  </div>
+                </div>
+                <br>
+                <h3>Extra tasks(optional)</h3>
+                <br>
+                <div class="form-group">
+                    <!----><div class="extra-tasks">
+                      <input type="radio" id="radioApple" name="radioFruit" value="0" checked>
+                      <label for="radioApple">Ironing</label>
+                  
+                      <input type="radio" id="radioBanana" name="radioFruit" value="10">
+                      <label for="radioBanana">Laundry</label>
+                  
+                      <input type="radio" id="radioOrange" name="radioFruit" value="20">
+                      <label for="radioOrange"> Windows</label> 
+
+                      <input type="radio" id="radioBanana" name="radioFruit" value="30">
+                      <label for="radioBanana"> Fridge</label>
+
+                       <input type="radio" id="radioBanana" name="radioFruit" value="40">
+                       <label for="radioBanana"> Oven</label>
+
+                     
+                  </div>
+                </div>
+                  <br>
+                  <h3>We recommend selecting 4.5 hours</h3>
+                  <br>
+                  <p>Based on your bedrooms, bathrooms and extra tasks</p>
+
+                  <br>
+
+                  <div class="form-group">
+                      <div class="radio-toolbar">
+                        <input type="radio" id="radioApple" name="radioFruit" value="0" checked>
+                        <label for="radioApple">2.0</label>
+                    
+                        <input type="radio" id="radioBanana" name="radioFruit" value="10">
+                        <label for="radioBanana">2.5</label>
+                    
+                        <input type="radio" id="radioOrange" name="radioFruit" value="20">
+                        <label for="radioOrange">3.0</label> 
+  
+                        <input type="radio" id="radioBanana" name="radioFruit" value="30">
+                        <label for="radioBanana">3.5</label>
+                        <br>
+                        <input type="radio" id="radioBanana" name="radioFruit" value="40">
+                         <label for="radioBanana">4.0</label>
+                         
+
+                        <input type="radio" id="radioBanana" name="radioFruit" value="50">
+                        <label for="radioBanana">4.5</label>
+  
+                        <input type="radio" id="radioBanana" name="radioFruit" value="60">
+                        <label for="radioBanana">5.0</label>
+  
+                        <input type="radio" id="radioBanana" name="radioFruit" value="70">
+                        <label for="radioBanana">5.5</label>
+                        <br>
+                        <input type="radio" id="radioBanana" name="radioFruit" value="60">
+                        <label for="radioBanana">6.0</label>
+  
+                        <input type="radio" id="radioBanana" name="radioFruit" value="70">
+                        <label for="radioBanana">6.5</label>
+                        
+
+                        <input type="radio" id="radioBanana" name="radioFruit" value="50">
+                        <label for="radioBanana">7.0</label>
+  
+                        <input type="radio" id="radioBanana" name="radioFruit" value="60">
+                        <label for="radioBanana">7.5</label>
+  
+                        <input type="radio" id="radioBanana" name="radioFruit" value="70">
+                        <label for="radioBanana">8.0</label>
+
+                        
+                    </div>
+                  </div>
+                  <br><br>
+
+                  <h3>Cleaning products</h3>
+                  <br>
+                  <p>Includes sprays and cloths. Your Housekeeper cannot bring a vacuum, mop or bucket</p>
+                  <br>
+                  <div class="form-group">
+                      <div class="products">
+                        <input type="radio" id="radioApple" name="radioFruit" value="0" checked>
+                        <label for="radioApple">Bring cleaning products</label>
+                    
+                        <input type="radio" id="radioBanana" name="radioFruit" value="10">
+                        <label for="radioBanana">I will provide</label>
+                      </div>
+                  </div>
+                  <br><br>
+
+                  <h3>How often?</h3>
+                  <br>
+                  <p>You can keep the same cleaner for recurring cleans. You can change or cancel any time.</p>
+                  <br>
+
+                  <div class="form-group">
+                      <div class="products">
+                        <input type="radio" id="radioApple" name="radioFruit" value="0" checked>
+                        <label for="radioApple">More than weekly</label>
+                    
+                        <input type="radio" id="radioBanana" name="radioFruit" value="10">
+                        <label for="radioBanana">Every week</label>
+
+                        <input type="radio" id="radioBanana" name="radioFruit" value="10">
+                        <label for="radioBanana">Every 2 weeks</label>
+
+                        <input type="radio" id="radioBanana" name="radioFruit" value="10">
+                        <label for="radioBanana">One-off</label>
+                      </div>
+                  </div>
+                  <br><br>
+                    <h3>Email</h3>
+                    <br>
+                    <div class="form-group">                
+                        <input type="email" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" required>
+                       </div>
+                       <br>
+                       <button type="button" class="btn btn-primary btn-lg">Continue</button>
+
+
+             </div>
+             <div class="col-4">
+
+                <div class="card" style="width: 100%;">
+                  <h4 id ="customers" style="text-align:center" >Happy customers</h4>
+                  
+                    <img class="card-img-top" src="img/profilna.png" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">The ONLY cleaning service you will ever need!  
+                          Mitar, London Bridge</p><br>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                    </div>
+                  </div>
+
+                  <br>
+                  <h3>Questions?</h3>
+                  <div id="accordion">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How does pricing work?
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                          <div class="card-body">
+                              It’s a simple hourly rate of £13.50/hour for cleaning or any other task.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Will I always have the same cleaner?
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                          <div class="card-body">
+                              Yes, if you select a recurring clean, we'll match you with cleaners who can come to you on a recurring basis.
+                               If they're ever away, you can choose to have a temporary cleaner via your online account.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Can I leave instructions for my cleaner?
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                You can add cleaning instructions anytime in your online account and these are sent directly to your cleaner's phone app ready for the clean.
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Do you offer end-of-tenancy cleans?
+                                </button>
+                              </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                              <div class="card-body">
+                                  No, we do not currently have any cleaners who offer end-of-tenancy, after-builder, move-in/out, deep or specialist cleaning.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card">
+                              <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                      Are the cleaners well looked after?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    Yes! We genuinely care about both cleaners and customers. We work hard to ensure cleaners find lots of work close to home,
+                                     meaning they earn more with Housekeep than anywhere else. That's why we have the best cleaners around!
+                                </div>
+                              </div>
+                            </div>
+
+                      <div class="card">
+                        <div class="card-header" id="headingSix">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Is there a minimum contract?
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                          <div class="card-body">
+                              No, because we're sure you'll love the service! You can cancel or reschedule one or all your cleans in your online account
+                               any time until 18:00 the day before without incurring any charge.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+             </div>
+
+         </div>
+      </div>
+
+
+
+
+  <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+.container{
+    padding:35px;
+}
+/* sobe */
+.radio-toolbar {
+    margin: 10px;
+    width:100%;
+  }
+  
+  .radio-toolbar input[type="radio"] {
+      display:none;
+     
+     
+  }
+  
+  .radio-toolbar label {
+      display:inline-block;
+      background-color:#ddd;
+      padding: 10px 20px;
+      margin-left: 10px;
+      font-family:Arial;
+      font-size:16px;
+      border: 2px solid #444;
+      border-radius: 4px; 
+      width: 140px;
+      height: 60px; 
+      text-align: center;  
+      
+  }
+  
+  .radio-toolbar label:hover {
+    background-color: #dfd;
+  }
+  
+  .radio-toolbar input[type="radio"]:checked + label { 
+      background-color:#bfb;
+      border-color: #4c4;
+  }
+
+/* kupatila */
+
+
+  .extra-tasks {
+    margin: 10px;
+    width:100%;
+  }
+  
+  .extra-tasks input[type="radio"] {
+      display:none;
+     
+     
+  }
+  
+  .extra-tasks label {
+      display:inline-block;
+      background-color:#ddd;
+      padding: 10px 20px;
+      margin-left: 10px;
+      font-family:Arial;
+      font-size:16px;
+      border: 2px solid #444;
+      border-radius: 4px; 
+      width: 120px;
+      height: 140px; 
+      text-align: center;  
+      
+  }
+  
+  .extra-tasks label:hover {
+    background-color: #dfd;
+  }
+  
+  .extra-tasks input[type="radio"]:checked + label { 
+      background-color:#bfb;
+      border-color: #4c4;
+  }
+
+
+/* products */
+
+
+  .products {
+    margin: 10px;
+    width:100%;
+  }
+  
+  .products input[type="radio"] {
+      display:none;
+     
+     
+  }
+  
+  .products label {
+      display:inline-block;
+      background-color:#ddd;
+      padding: 10px 20px;
+      margin-left: 10px;
+      font-family:Arial;
+      font-size:16px;
+      border: 2px solid #444;
+      border-radius: 4px; 
+      width: 320px;
+      height: 60px; 
+      text-align: center;  
+      
+  }
+  
+  .products label:hover {
+    background-color: #dfd;
+  }
+  
+  .products input[type="radio"]:checked + label { 
+      background-color:#bfb;
+      border-color: #4c4;
+  }
+
+  .checked {
+    color: orange;
+  }
+
+  #customers{
+    padding: 20px 50px;
+  }
+
+  
+
+  
+  
+  
+
+
